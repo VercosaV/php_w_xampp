@@ -35,8 +35,6 @@ if (isset($_GET['nome']) && $_GET['nome'] !='') {
 
 $lista_tarefas = array();
 
-if (isset($_SESSION['lista_tarefas'])){
-    $lista_tarefas = $_SESSION['lista_tarefas'];
-}
+$lista_tarefas = buscar_tarefas($conexao);
 
 include "template.php";
