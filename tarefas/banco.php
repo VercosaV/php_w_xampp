@@ -1,8 +1,11 @@
 <?php
 
-$bdServidor = '127.0.0.1';
-$bdUsuario = 'sistematarefas'; // Corrigido: removido o 's' extra no final
-$bdSenha = 'sistema';
+//$bdServidor = '127.0.0.1'; pc da empresa e windows
+$bdServidor = 'localhost';
+//$bdUsuario = 'sistematarefa'; pc da empresa e windows
+$bdUsuario = 'root';
+//$bdSenha = 'sistema'; // pc da empresa e windows
+$bdSenha = '';
 $bdBanco = 'tarefas';
 
 $conexao = mysqli_connect($bdServidor, $bdUsuario, $bdSenha, $bdBanco);
